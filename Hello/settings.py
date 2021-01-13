@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 from Hello import shop_secret
+from Hello import Secret_file
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 #SECRET_KEY = '44pythjio#a!p5&9=xaycht0folcukjibm75nbws6s6$dgj4+d'
 
-SECRET_KEY = shop_secret.sec
+SECRET_KEY = Secret_file.sec
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
