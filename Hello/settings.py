@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from Hello import shop_secret
 from Hello import Secret_file
 
 
@@ -24,7 +23,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-#SECRET_KEY = '44pythjio#a!p5&9=xaycht0folcukjibm75nbws6s6$dgj4+d'
 
 SECRET_KEY = Secret_file.sec
 
