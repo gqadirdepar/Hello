@@ -21,12 +21,13 @@ def services(request):
 
 def contact(request):
     if request.method == 'POST':
-        Name=request.POST.get('name')
-        email=request.POST.get('Email')
-        phone=request.POST.get('Phone')
-        desc=request.POST.get('Desc')
+        Contact.save(Name='Ghulam Qadir',email='ths',phone='this phone',desc='this descr')
+      #  Name=request.POST.get('name')
+       # email=request.POST.get('Email')
+        #phone=request.POST.get('Phone')
+        #desc=request.POST.get('Desc')
         #date=date.today()
-        contact=Contact.save(Name=name,email=Email,phone=Phone,desc=Desc)
+        #contact=Contact.save(Name='name',email='Email',phone='Phone',desc='Desc')
         
         
     return render(request,'contact.html')
