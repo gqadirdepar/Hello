@@ -33,4 +33,8 @@ def contact(request):
     return render(request,'contact.html')
 #    return HttpResponse('This is contact page')
 
+def services1(request):
+     return HttpResponse('services html')
+    #return HttpResponse('This is services page')
+
 

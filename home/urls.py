@@ -22,5 +22,6 @@ urlpatterns = [
   # path('about' , views.about , name="about")
    #path( "about" , views.about , name="about")
    path( "services" , views.services , name="services"),
+   path( "services1",views.services1),
    path( "contact" , views.contact , name="contact")
 ]
