@@ -26,6 +26,6 @@ urlpatterns = [
    path( "services" , views.services , name="services"),
    path( "services1",views.services1),
    path( "contact" , views.contact , name="contact"),
-   path( "services2", services2.as_view()),
-   path( "article", Article.as_view())
+   path( "services2", services2.as_view(),name="Services2"),
+   path( "article", Article.as_view(), name="Article")
 ]
