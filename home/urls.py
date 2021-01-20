@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home import views
+from .views import services2,Article
+
 urlpatterns = [
    path( "" , views.index , name="home"),
    path('about',views.about, name='about'),
@@ -23,5 +25,7 @@ urlpatterns = [
    #path( "about" , views.about , name="about")
    path( "services" , views.services , name="services"),
    path( "services1",views.services1),
-   path( "contact" , views.contact , name="contact")
+   path( "contact" , views.contact , name="contact"),
+   path( "services2", services2.as_view()),
+   path( "article", Article.as_view())
 ]
